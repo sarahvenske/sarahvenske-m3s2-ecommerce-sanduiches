@@ -1,0 +1,113 @@
+.cartBox_title{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 100%;
+    height: 65px;
+    background: var(--Color-primary);
+    border-radius: 5px 5px 0px 0px;
+    color: var(--Color-white);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.cartBox_empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 158px;
+    background: #F5F5F5;
+}
+
+.cartBox_empty h3{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--Color-grey-100);
+}
+
+.cartBox_empty p{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--Color-grey-50);
+}
+
+.cartBox_ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.cartBox_li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 90%;
+}
+
+.cartBox_divImg{
+    height: 80px;
+    min-width: 30%;
+}
+
+.cartBox_divImg img{
+    height: 100%;
+    width: 100%;
+}
+
+.cartBox_divInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80px;
+    width: 100%;
+}
+
+.cartBox_divInfoBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.cartBox_divInfoBox h3{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.cartBox_divInfoBox button{
+    border: none;
+    font-weight: 500;
+    font-size: 10px;
+    color: var(--Color-grey-50);
+    background-color: var(--Color-white);
+}
+
+.cartBox_divInfo span{
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--Color-grey-50);
+}
+
+.cartBox_total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonRemoveAll{
+    width: 95%;
+    height: 50px;
+    background: var(--Color-grey-20);
+    border: 2px solid var(--Color-grey-20);
+    border-radius: 8px;
+    color: var(--Color-grey-50);
+    font-weight: 600;
+    font-size: 16px;
+}
+
