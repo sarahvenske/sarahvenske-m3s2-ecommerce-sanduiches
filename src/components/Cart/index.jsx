@@ -5,17 +5,18 @@ function Cart({currentSale, removeCartItem, removeAllItems}){
     
     if(currentSale.length == 0){
         return(
-            <>
+            <div className="cartBox">
                 <div className="cartBox_title">Carrinho de compras</div>
                 <div className="cartBox_empty">
                     <h3>Sua sacola está vazia</h3>
                     <p>Adicione itens</p>
-                    </div>
-            </>
+                </div>
+            </div>
+         
         )
     }
     return(
-        <>
+        <div className="cartBox">
             <div className="cartBox_title">Carrinho de compras</div>
                 <ul className="cartBox_ul">{currentSale.map((item) => {
                     return(
@@ -38,7 +39,8 @@ function Cart({currentSale, removeCartItem, removeAllItems}){
                     <TotalMoney currentSale={currentSale}/>
                     <button onClick={removeAllItems} className="buttonRemoveAll">Remover todos</button>
                 </div>
-        </>
+        </div>
+        
     )
 }
 

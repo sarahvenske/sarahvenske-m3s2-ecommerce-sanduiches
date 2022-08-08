@@ -1,3 +1,8 @@
+.cartBox{
+    width: 100%;
+}
+
+
 .cartBox_title{
     display: flex;
     align-items: center;
@@ -111,3 +116,9 @@
     font-size: 16px;
 }
 
+@media (min-width: 768px) {
+    .cartBox{
+        width: 90%;
+        max-width: 300px;
+    }
+}

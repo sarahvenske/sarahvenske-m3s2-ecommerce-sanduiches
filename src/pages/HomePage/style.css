@@ -25,6 +25,7 @@ header form{
     justify-content: space-around;
     align-items: center;
     width: 95%;
+    max-width: 365px;
     height: 45px;
     border-radius: 8px;
     background-color: var(--Color-white);
@@ -101,38 +102,42 @@ main aside{
     }
 
     header form{
-        width: 40%;
+        width: 35%;
     }
 
     main{
-        width: 80%;
+        flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        flex-direction: row;
-
         gap: 0px;
     }
 
     main section{
         display: flex;
         justify-content: center;
-        width: 85%;
+        width: 50%;
         height: 100%;
-        /* overflow-x: none; */
     }
     
     main section ul{
         flex-wrap: wrap;
+        justify-content: center;
         height: 100%;
-        width: 100%;
+        width: 95%;
         gap: 15px
     }
     
-    
     main aside{
-        width: 80%;
-        max-width: 400px;
+        align-items: center;
+        width: 50%;
     }
 
+}
+
+@media (min-width: 1024px) {
+    main aside{
+        align-items: center;
+        width: 30%;
+    }
 }
 

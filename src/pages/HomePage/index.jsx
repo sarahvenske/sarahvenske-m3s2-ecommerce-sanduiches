@@ -22,11 +22,13 @@ const HomePage = () => {
 
     function showProducts(e){
         e.preventDefault()
-        if(filteredProducts == '') return 
-
-        const filter = products.filter((item) => item.name === filteredProducts)
+        if(filteredProducts == "") return 
+        
+        const filter = products.filter((item) => item.name.toLowerCase().includes(filteredProducts.toLowerCase()))
 
         setProducts(filter) 
+        setFilteredProducts("")
+        console.log(products)
     }
 
     const [currentSale, setCurrentSale] = useState([])
