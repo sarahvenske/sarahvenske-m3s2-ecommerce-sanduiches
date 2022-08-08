@@ -50,6 +50,7 @@
     font-size: 14px;
     height: 30px;
     width: 50%;
+    cursor: pointer;
 }
 
 .boxDiv_info button:hover{

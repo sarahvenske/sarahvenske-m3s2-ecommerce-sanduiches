@@ -43,6 +43,7 @@ header input{
     font-weight: 400;
     font-size: 16px;
     color: var(--Color-grey-50);
+    outline: 0;
 
 }
 
@@ -53,6 +54,7 @@ header button{
     border: 2px solid var(--Color-primary);
     border-radius: 8px;
     color: var(--Color-white);
+    cursor: pointer;
 }
 
 header button:hover{
